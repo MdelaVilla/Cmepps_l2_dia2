@@ -1,3 +1,4 @@
+package pkg;
 
 public class Empleado {
 	enum TipoEmpleado{Vendedor, Encargado};
