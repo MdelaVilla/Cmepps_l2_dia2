@@ -1,9 +1,9 @@
 package pkg;
 
 public class Empleado {
-	enum TipoEmpleado{Vendedor, Encargado};
+	public enum TipoEmpleado{Vendedor, Encargado};
 	 
-	float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtra) {
+	public static float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtra) {
 //		El empleado puede ser Vendedor o Encargado. El salario base será 2000 euros si 
 //		el empleado es de tipo vendedor, y de 2500 euros si es de tipo encargado. 
 //		Se le sumará a esta cantidad una prima de 100 euros si las ventas del mes 
@@ -24,7 +24,7 @@ public class Empleado {
 		
 	}
 	
-	float calculoNominaNeta(float nominaBruta) {
+	public static float calculoNominaNeta(float nominaBruta) {
 //		Si la nomina bruta es menor de 2100 euros, no se aplicará ninguna retención. 
 //		Para nominas superiores a 2100 pero menores de 2500 euros se les aplicará un 15%. 
 //		Para salarios a partir de 2500 euros se les aplicará un 18%. El método devuelve 
